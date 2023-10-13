@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Fruit : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public FruitState state {get; private set;}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void SetState(FruitState state){
+        this.state = state;
     }
 }
